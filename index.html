@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <title>Ethan Sharp</title>    
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <script>
+            function show(shown, hidden, hidden2, select, deselect, deselect2) {
+                document.getElementById(shown).style.display='block';
+                document.getElementById(hidden).style.display='none';
+                document.getElementById(hidden2).style.display='none';
+                document.getElementById(select).style.borderRightWidth='5px';
+                document.getElementById(deselect).style.borderRightWidth='0px';
+                document.getElementById(deselect2).style.borderRightWidth='0px';
+                return false;
+            }
+        </script>
+        <style>
+            #left-column {
+                margin-top: 50px;
+                margin-bottom: 100px;
+                float: left;
+                width: 20%;
+                background-color: rgb(225, 225, 225);
+                padding-left: 10px;
+                position: fixed;
+                overflow: hidden;
+            } .side-heading {
+                font-size: 20px;
+                margin-top: 0px;
+                font-family: serif;
+                margin-left: -10px;
+                padding-left: 15px;
+                margin-bottom: 0px;
+                padding-bottom: 8px;
+                padding-top: 4px;
+                border-bottom-style: solid;
+                border-color: #FFFFFF;
+                color: #FFFFFF;
+                background-color: #FF8200;
+                border-width: 1px;
+            } li {
+                list-style-type: none;
+                padding: 5px 0px 5px 40px;
+                margin: 0px 0px 0px -50px;
+                font-family: serif;
+                font-size: 16px;
+                border-color: #FFFFFF;
+                color: #58595B;
+                border-width: 1px;
+                border-style: none none solid none;
+            } li:hover {
+                background-color: #58595B;
+                color: #FFFFFF;
+            } .classes:hover {
+                background-color: rgb(255, 255, 255, 0%);
+                color: #58595B;
+            } ul {
+                margin: 0px 0px 0px 0px
+            } .right-column {
+                float: right;
+                width: 78%;
+                margin: 40px 0px 0px 0px;
+                padding: 0px 0px 0px 0px;
+                overflow: hidden;
+            } h1 {
+                margin: 0px 0px 0px 30px;
+                padding: 0px 0px 0px 0px;
+                font-size: 50px;
+                font-family: serif;
+                color: #58595B
+            } #profile {
+                margin: 30px 0px 0px 30px;
+                padding: 0px 0px 0px 0px;
+                float: left;
+                width: 300px;
+            } h2 {
+                margin: 330px 0px -30px 30px;
+                padding: 0px 0px 30px 0px;
+                font-size: 30px;
+                font-family: serif;
+                color: rgb(80, 80, 80);
+            } #major {
+                margin: -8px 0px 0px 30px;
+                padding: 0px 0px 0px 0px;
+                border-style: none none solid none;
+                border-width: 1px;
+                border-color: rgb(213, 213, 213);
+                color: #FF8200
+            } video {
+                margin: 0px 0px 0px 30px;
+            } p {
+                margin: 0px 0px 5px 30px;
+                font-family: serif;
+            } #home p {
+                padding: 30px 0px 0px 0px;
+                border-style: solid none none;
+                border-width: 1px;
+                border-color: rgb(213, 213, 213);
+                margin: 20px 0px 0px 30px;
+            } h4 {
+                margin: 20px 0px 5px 30px;
+                font-family: serif;
+                font-size: 16px;
+                color: rgb(50, 50, 50);
+            } #footer {
+                background: #58595B;
+                color: #FFFFFF;
+                margin: 25px 0px 10px 0px;
+                width: 96%;
+                padding: 25px 0px 25px 35px;
+                font-size: 20px;
+                font-family: serif;
+                float:left;
+                overflow: hidden;
+            } #footer a {
+                color: #FFFFFF;
+                font-size: 20px;
+                font-family: serif;
+            } #email {
+                padding-left: 10px;
+            } a {
+                text-decoration: none;
+            } .gap {
+                border: none;
+                background: #FFFFFF;
+                height: 30px;
+            } .gap:hover {
+                background: #FFFFFF;
+            } .topGap {
+                border: none;
+                background: #FFFFFF;
+                height: 1px;
+            } .topGap:hover {
+                background: #FFFFFF;
+            }
+    </style>
+    </head>
+    <body>
+        <section id="left-column">
+            <h2 class="side-heading" style="border-top-style: solid;">Pages</h2>
+            <ul>
+                <li class="topGap"></li>
+                <a href="#" onclick="return show('home', 'projects', 'papers', 'homeTab', 'projectsTab', 'papersTab');"><li id="homeTab" style="border-right:#FF8200 solid 5px">Home</li></a>
+                <a href="#" onclick="return show('projects', 'home', 'papers', 'projectsTab', 'homeTab', 'papersTab');"><li id="projectsTab" style="border-right:#FF8200 solid 0px">Projects</li></a>
+                <a href="#" onClick="return show('papers', 'home', 'projects', 'papersTab', 'homeTab', 'projectsTab');"><li id="papersTab" style="border-right:#FF8200 solid 0px">Papers</li></a>
+                <li class="gap"></li>
+            </ul>
+            <h2 class="side-heading">Campus Involvement</h2>
+            <ul>
+                <li class="topGap"></li>
+                <a href="https://www.ukirkutk.org"><li>Ukirk</li></a>
+                <a href="https://music.utk.edu/academics/strings/cello-studies/"><li>Cello Studio</li></a>
+                <a href="https://music.utk.edu/ensembles/orchestra/"><li>Symphony Orchestra</li></a>
+                <li class="gap"></li>
+            </ul>
+            <h2 class="side-heading">Social Links</h2>
+            <ul>
+                <li class="topGap"></li>
+                <a href="https://www.linkedin.com/in/ethansharp05/"><li>LinkedIn</li></a>
+                <a href="https://utk.joinhandshake.com/profiles/pcf7jz"><li>Handshake</li></a>
+                <a href="https://www.instagram.com/ethansharp05/"><li>Instagram</li></a>
+                <li class="gap"></li>
+            </ul>
+        </section>
+        <section id="home" class="right-column" style="display:block">
+            <h1>Ethan Sharp</h1>
+            <h2 id="major">BS-BME</h2>
+            <img id="profile" src="./index_files/profile.jpg">
+            <p style="margin: 290px 0px 0px 30px">Ethan Sharp is a sophomore at the University of Tennessee, Knoxville. He is currently getting his bachelor's of science in biomedical engineering with an applied music minor. He is on course to graduate in may of 2027. After undergraduate, he plans on attending grad school and getting a master's degree also in biomedical engineering. He currently wishes to pursue either a diagnostics or medical device design track</p>
+            <p> Ethan is born and raised in Knoxville, Tennessee. He graduated from Hardin Valley Academy in 2023 from the Liberal Arts Academy in the performing arts pathway. He has played the cello for fifteen years and currently is a part of the University of Tennessee cello studio. In the past, he has participated in the University of Tennessee Symphony Orchstra, Chamber Orchestra, and Opera Pit.</p>
+        </section>
+        <section id="projects" class="right-column" style="display:none">
+            <h1>Projects</h1>
+            <h4 style="padding: 30px 0px 0px 0px; border-style: solid none none; border-width: 1px; border-color: rgb(213, 213, 213); margin: 20px 0px 0px 30px;">Rube Goldberg Project</h4>
+            <p>In November of 2022 in my EF 151 class at Pellissippi State Community College, me and my lab partners built a rube goldberg machine that's purpose was to squeeze the entirety of a tube of toothpaste onto a glass plate. Our machine started with a water bottle that poured into a bucket. When the bucket became heavy enough, it pushed down a board with a car on the other end. The board would then incline which caused the car to roll down. The car had a needle attached to it and it rolled into a balloon with another board balanced on it. When the balloon popped, the board fell and caused a dumbell to roll down onto a path. The right weight on the dumbell ran over the toothpaste which squeeze its contents onto the plate.</p>
+            <h4>Davinci Hammer Project</h4>
+            <p>In April of 2023 in my EF 152 class at Pellissippi State Community College, me and a group of my peers built a davinci hammer powered by water. I built the entirety of the machine except for the water wheel. The image on the right shows my contribution to the project. The video shows someone manually rotating the wheel because the class did not have the water pressure needed to test the machines, but in a real world application, it would be powered by a strong water stream.</p>
+            <video controls width="200px" src="./index_files/davinci-hammer-vid.mp4" style="float:left"></video>
+            <img src="./index_files/davinci-hammer-pic.jpg" height="355" style="margin:0px 0px 0px 10px">
+            <h4>Matlab Sphero Rover Project</h4>
+            <p>In November of 2023 in my EF 230 class at the University of Tennessee Knoxville, I participated alongside my lab partners to create the code in matlab to operate a sphero rover to excecute a specific function. Our project had the user select on a map where they wished the rover to go, then the rover woudl orient itself to face the point and drive to the destination. Along the way, the rover stopped for any obstacles in front of it and waited for them to pass before continuing. Thoughout the drive, the rover graphed its position to show the user how far along it was to reaching its destination. Below is the master code used to control the rover as well as the orient funciton used in the master code to orient the rover in the direction of the destination.</p>
+            <img src="./index_files/rover-project.png" width="30%" style="margin:0px 0px 0px 30px;border-style:solid;border-width:0.1px">
+            <img src="./index_files/rover-project-orient.png" width="50%" style="margin:0px 0px 0px 20px;border-style:solid;border-width:0.1px">
+        </section>
+        <section id="papers" class="right-column" style="display:none">
+            <h1>Academic Papers</h1>
+            <h4 style="padding: 30px 0px 0px 0px; border-style: solid none none; border-width: 1px; border-color: rgb(213, 213, 213); margin: 20px 0px 0px 30px;"><a href="./index_files/orthopedics-paper.pdf"> The Use of Bioactive Glass Integrated Telescoping Rods to Treat Osteogenesis Imperfecta</a></h4>
+            <p>I wrote this paper as an assignment for BME205 Anatomy and Physiology for Biomedical Engineers. The assignment was to design a device to diagnose or treat a disease of the musculoskeletal system. I chose Osteogenesis Imperfecta and my innovation was to include bioactive glass.</p>
+            <h4><a href="./index_files/cardiovascular-paper.pdf">Internal Aortic Implant to Detect Aortic Root Dissection Before it Occurs</a></h4>
+            <p>I wrote this paper as an assignment for BME205 Anatomy and Physiology for Biomedical Engineers. The assignment was to design a device to diagnose or treat a disease of the cardiovascular system. I chose Marfan syndrom and designed an internal aortic implant to detect aortic root dissection before it occurs.</p>
+            <h4><a href="./index_files/artificial-organ-paper.pdf">The Miniaturization of ECMO for Emergency Procedures and Ambulatory Patients</a></h4>
+            <p>I wrote this paper as an assignment for BME205 Anatomy and Physiology for Biomedical Engineers. The assignment was to design a device for organ replacement or bridge to transplant. I could choose any organ, including a blood substitute. I Chose ECMO which is commonly used as a bridge to transplant for heart and lung transplant surgery.</p>
+            <h4><a href="./index_files/neuro-paper.pdf">The Development of a Wearable Patch For Early Alzheimer’s Disease Detection</a></h4>
+            <p>I wrote this paper as an assignment for BME205 Anatomy and Physiology for Biomedical Engineers. The assignment was to design a device to diagnose or treat a disease of the nervous system. I chose Alzheimer's disease and designed a patch device to detect early indicators of Alzheimer's onset through specific biomarkers</p>
+            <h4><a href="./index_files/bioactive-glass-proposal.pdf">Telescoping Rod with Bioactive Glass Modification Proposal</a></h4>
+            <p style="margin-bottom:80px">I and a group of my peers wrote this paper as an assignment for BME474. The assignment was to write a proposal to assess the safety and efficacy of a new biomedical device. We had the flexibility to choose to study an established biomaterial for a new application, a modification to an existing biomaterial, or a fully new biomaterial. </p>
+        </section>
+        <p id="footer">Phone Number | (865) 742-5546<br>Email | esharp10@vols.utk.edu</p>
+    </body>
+</html>
