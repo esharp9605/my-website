@@ -5,13 +5,15 @@
         <meta charset="utf-8">
         <title></title>
         <script>
-            function show(shown, hidden, hidden2, select, deselect, deselect2) {
+            function show(shown, hidden, hidden2, hidden3, select, deselect, deselect2, deselect3) {
                 document.getElementById(shown).style.display='block';
                 document.getElementById(hidden).style.display='none';
                 document.getElementById(hidden2).style.display='none';
+                document.getElementById(hidden3).style.display='none';
                 document.getElementById(select).style.borderRightWidth='5px';
                 document.getElementById(deselect).style.borderRightWidth='0px';
                 document.getElementById(deselect2).style.borderRightWidth='0px';
+                document.getElementById(deselect3).style.borderRightWidth='0px';
                 return false;
             }
         </script>
@@ -141,11 +143,10 @@
             <h2 class="side-heading" style="border-top-style: solid;">Pages</h2>
             <ul>
                 <li class="topGap"></li>
-                <a href="#" onclick="return show('home', 'projects', 'papers', 'homeTab', 'projectsTab', 'papersTab');"><li id="homeTab" style="border-right:#FF8200 solid 5px">Home</li></a>
-                <a href="#" onClick="return show('papers', 'home', 'projects', 'papersTab', 'homeTab', 'projectsTab');"><li id="aboutTab" style="border-right:#FF8200 solid 0px">About Me</li></a>
-                <a href="#" onclick="return show('projects', 'home', 'papers', 'projectsTab', 'homeTab', 'papersTab');"><li id="projectsTab" style="border-right:#FF8200 solid 0px">Projects</li></a>
-                <a href="#" onClick="return show('papers', 'home', 'projects', 'papersTab', 'homeTab', 'projectsTab');"><li id="papersTab" style="border-right:#FF8200 solid 0px">Papers</li></a>
-                <a href="#" onClick="return show('papers', 'home', 'projects', 'papersTab', 'homeTab', 'projectsTab');"><li id="papersTab" style="border-right:#FF8200 solid 0px">Resume</li></a>
+                <a href="#" onclick="return show('home', 'projects', 'papers', 'about', 'homeTab', 'projectsTab', 'papersTab', 'aboutTab');"><li id="homeTab" style="border-right:#FF8200 solid 5px">Home</li></a>
+                <a href="#" onClick="return show('about', 'papers', 'home', 'projects', 'aboutTab', 'papersTab', 'homeTab', 'projectsTab');"><li id="aboutTab" style="border-right:#FF8200 solid 0px">About Me</li></a>
+                <a href="#" onclick="return show('projects', 'home', 'papers', 'about', 'projectsTab', 'homeTab', 'papersTab', 'aboutTab');"><li id="projectsTab" style="border-right:#FF8200 solid 0px">Projects</li></a>
+                <a href="#" onClick="return show('papers', 'home', 'projects', 'about', 'papersTab', 'homeTab', 'projectsTab', 'aboutTab');"><li id="papersTab" style="border-right:#FF8200 solid 0px">Papers</li></a>
                 <li class="gap"></li>
             </ul>
             <h2 class="side-heading">Links</h2>
@@ -153,6 +154,7 @@
                 <li class="topGap"></li>
                 <a href="https://www.linkedin.com/in/ethansharp05/"><li>LinkedIn</li></a>
                 <a href="https://utk.joinhandshake.com/profiles/pcf7jz"><li>Handshake</li></a>
+                <a href="./index_files/resume.pdf">Resume</a>
                 <li class="gap"></li>
             </ul>
         </section>
@@ -187,6 +189,11 @@
             <p>I wrote this paper as an assignment for BME205 Anatomy and Physiology for Biomedical Engineers. The assignment was to design a device to diagnose or treat a disease of the nervous system. I chose Alzheimer's disease and designed a patch device to detect early indicators of Alzheimer's onset through specific biomarkers</p>
             <h4><a href="./index_files/bioactive-glass-proposal.pdf">Telescoping Rod with Bioactive Glass Modification Proposal</a></h4>
             <p style="margin-bottom:80px">I and a group of my peers wrote this paper as an assignment for BME474. The assignment was to write a proposal to assess the safety and efficacy of a new biomedical device. We had the flexibility to choose to study an established biomaterial for a new application, a modification to an existing biomaterial, or a fully new biomaterial. </p>
+        </section>
+        <section id="about" class="right-column" style="display:block">
+            <h1>Ethan Sharp</h1>
+            <h2 id="major">BS-BME</h2>
+            <p style="margin: 290px 0px 0px 30px">General About Info Here</p>
         </section>
         <p id="footer">Phone Number | (865) 742-5546<br>Email | esharp10@vols.utk.edu</p>
     </body>
